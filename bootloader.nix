@@ -6,13 +6,17 @@
 
 {
 
-  # Use the GRUB 2 boot loader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.efiInstallAsRemovable = true;
-  # boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  # Define on which hard drive you want to install Grub.
-  boot.loader.grub.device = "nodev"; # or "nodev" for efi only
+boot.loader = {
+  efi = {
+    canTouchEfiVariables = true;
+    efiSysMountPoint = "/boot/efi"; # ← use the same mount point here.
+  };
+  grub = {
+     efiSupport = true;
+     #efiInstallAsRemovable = true; # in case canTouchEfiVariables doesn't work for your system
+     device = "nodev";
+  };
+};
 
 }
 

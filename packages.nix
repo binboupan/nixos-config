@@ -32,7 +32,9 @@
     gimp
     discover
     vscode
-    nixfmt
+    zip
+    unzip
+    unrar
   ];
 
   services.flatpak.enable = true;
