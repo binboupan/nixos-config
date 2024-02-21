@@ -13,13 +13,14 @@
       system = "x86_64-linux";
       modules = [
         nix-flatpak.nixosModules.nix-flatpak
-        ./configuration.nix
-        ./packages.nix
-        ./graphics.nix
-        ./bootloader.nix
-        ./windowing_system.nix
-        ./bluetooth.nix
         ./audio.nix
+        ./bluetooth.nix
+        ./bootloader.nix
+        ./configuration.nix
+        ./environment.nix
+        ./graphics.nix
+        ./packages.nix
+        ./windowing_system.nix
       ];
     };
   };
