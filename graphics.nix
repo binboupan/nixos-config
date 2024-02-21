@@ -31,5 +31,6 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+
 }
 
