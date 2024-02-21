@@ -27,6 +27,10 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
 
+hardware.logitech.wireless.enable = true;
+hardware.logitech.wireless.enableGraphical = true; # for solaar to be included
+
+
   system.stateVersion = "23.11"; # Did you read the comment?
 
 }
