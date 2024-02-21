@@ -40,6 +40,10 @@
     zip
     unzip
     unrar
+    audacious
+    audacious-plugins
+    qbittorrent
+    solaar
   ];
 
   services.flatpak.enable = true;
@@ -50,6 +54,13 @@
     "net.lutris.Lutris"
     "com.discordapp.Discord"
     "com.valvesoftware.Steam"
+    "net.rpcs3.RPCS3"
+    "app.xemu.xemu"
+    "net.pcsx2.PCSX2"
+    "org.yuzu_emu.yuzu"
+    "org.duckstation.DuckStation"
+    "net.davidotek.pupgui2"
+
   ];
 
   # Fix cursors, fonts and icons in flatpak applications
