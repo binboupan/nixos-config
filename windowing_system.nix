@@ -14,8 +14,8 @@
   services.xserver.displayManager.autoLogin.user = "binboupan";
 
   # Configure keymap in X11
-  services.xserver.layout = "fi";
-  services.xserver.xkbOptions = "eurosign:e";
+  services.xserver.xkb.layout = "fi";
+  services.xserver.xkb.options = "eurosign:e";
 
 }
 
