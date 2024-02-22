@@ -13,8 +13,8 @@
       system = "x86_64-linux";
       modules = [
         nix-flatpak.nixosModules.nix-flatpak
+        ./computers/lootbox.nix
         ./audio.nix
-        ./bluetooth.nix
         ./bootloader.nix
         ./configuration.nix
         ./environment.nix

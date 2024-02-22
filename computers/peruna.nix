@@ -1,15 +1,13 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# Home configuration
 
 { config, lib, pkgs, ... }:
 
 {
   imports = [ # Include the results of the hardware scan.
-    ./hardware-configuration.nix
+    ../hardware-configuration.nix
   ];
 
-  networking.hostName = "lootbox"; # Define your hostname.
+  networking.hostName = "peruna"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
 
@@ -27,11 +25,8 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
 
-hardware.logitech.wireless.enable = true;
-hardware.logitech.wireless.enableGraphical = true; # for solaar to be included
-
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  system.stateVersion = "23.11"; # Did you read the comment?
+system.stateVersion = "23.11"; # Did you read the comment?
 
 }
 
