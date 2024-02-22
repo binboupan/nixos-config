@@ -46,7 +46,7 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
 
   ];
 
-# Home computer extra packages
+  # Home computer extra packages
   environment.systemPackages = with pkgs; [
     mpv
     audacious

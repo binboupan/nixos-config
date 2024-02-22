@@ -10,6 +10,7 @@
   networking.hostName = "peruna"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
+  virtualisation.docker.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Helsinki";
@@ -22,13 +23,15 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.binboupan = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "docker" ]; # Enable ‘sudo’ for the user.
   };
 
 
 # Work computer extra packages
   environment.systemPackages = with pkgs; [
     libreoffice-qt
+    python39
+
   ];
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
