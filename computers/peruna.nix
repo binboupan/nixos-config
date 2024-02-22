@@ -28,7 +28,7 @@
 
 # Work computer extra packages
   environment.systemPackages = with pkgs; [
-
+    libreoffice-qt
   ];
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
