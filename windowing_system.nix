@@ -10,8 +10,7 @@
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "binboupan";
+
 
   # Configure keymap in X11
   services.xserver.xkb.layout = "fi";

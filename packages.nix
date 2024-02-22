@@ -1,6 +1,4 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# Packages to install on all computers.
 
 { config, lib, pkgs, ... }:
 
@@ -24,7 +22,7 @@
     elisa
   ];
 
-
+  # Core packages, on all configurations
   environment.systemPackages = with pkgs; [
     wget
     firefox

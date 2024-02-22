@@ -1,4 +1,4 @@
-# Work configuration
+# Home configuration
 
 { config, lib, pkgs, ... }:
 
@@ -54,6 +54,28 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
     qbittorrent
     solaar
   ];
+
+
+
+  # Load nvidia driver for Xorg and Wayland
+  services.xserver.videoDrivers = [ "nvidia" ];
+
+  hardware.nvidia = {
+
+    # Modesetting is required.
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = false;
+    nvidiaSettings = true;
+
+    # Optionally, you may need to select the appropriate driver version for your specific GPU.
+    package = config.boot.kernelPackages.nvidiaPackages.production;
+  };
+
+
+services.xserver.displayManager.autoLogin.enable = true;
+services.xserver.displayManager.autoLogin.user = "binboupan";
 
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 system.stateVersion = "23.11"; # Did you read the comment?

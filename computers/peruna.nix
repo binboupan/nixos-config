@@ -25,6 +25,12 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
 
+
+# Work computer extra packages
+  environment.systemPackages = with pkgs; [
+
+  ];
+
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 system.stateVersion = "23.11"; # Did you read the comment?
 
