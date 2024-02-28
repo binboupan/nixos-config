@@ -24,6 +24,7 @@
 
   # Core packages, on all configurations
   environment.systemPackages = with pkgs; [
+    filelight
     wget
     firefox
     konsole
