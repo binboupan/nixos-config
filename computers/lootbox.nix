@@ -32,19 +32,6 @@ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth control
 
 
 # Home computer flatpaks
-  services.flatpak.packages = [
-    "com.spotify.Client"
-    "net.lutris.Lutris"
-    "com.discordapp.Discord"
-    "com.valvesoftware.Steam"
-    "net.rpcs3.RPCS3"
-    "app.xemu.xemu"
-    "net.pcsx2.PCSX2"
-    "org.yuzu_emu.yuzu"
-    "org.duckstation.DuckStation"
-    "net.davidotek.pupgui2"
-
-  ];
 
   # Home computer extra packages
   environment.systemPackages = with pkgs; [
