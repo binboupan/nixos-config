@@ -8,9 +8,9 @@
 
   services.xserver.enable = true;
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma6.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
   #services.xserver.displayManager.sddm.wayland.enable = true; 
-  services.xserver.displayManager.defaultSession = "plasmax11";
+  services.xserver.displayManager.defaultSession = "plasma";
   # Configure keymap in X11
   services.xserver.xkb.layout = "fi";
   services.xserver.xkb.options = "eurosign:e";

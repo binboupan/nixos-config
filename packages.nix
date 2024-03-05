@@ -38,6 +38,9 @@
     zip
     unzip
     unrar
+    chromium
+    wine
+    inxi
   ];
 
   services.flatpak.enable = true;
